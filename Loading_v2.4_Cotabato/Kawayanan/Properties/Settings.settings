@@ -1,0 +1,181 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AlreySolutions.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="TIN" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Address2" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PrintVat" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="dbConnectionString1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SERVER=localhost;DATABASE=posdbcottest;UID=admin;</Value>
+    </Setting>
+    <Setting Name="Logos" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Logo.png</Value>
+    </Setting>
+    <Setting Name="AdminPage" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Message3" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PrintTIN" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Company" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Address1" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Message1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Thank you very much!</Value>
+    </Setting>
+    <Setting Name="Message2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Please come again...</Value>
+    </Setting>
+    <Setting Name="PrintMessage" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Theme" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="RequireCustomerName" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="InterestRate" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0.02</Value>
+    </Setting>
+    <Setting Name="AddInvCalibrate" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Database" Type="System.String" Scope="User">
+      <Value Profile="(Default)">POSdb.mdb</Value>
+    </Setting>
+    <Setting Name="ServerPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\03. Development\Local Dev\PointOfSales\Hardware_v1.10_AlamadaCoop\Kawayanan\bin\Debug\</Value>
+    </Setting>
+    <Setting Name="MaxPercentDiscount" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
+    <Setting Name="VatPercentage" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
+    <Setting Name="ContactNum" Type="System.String" Scope="User">
+      <Value Profile="(Default)">09175587982
+                </Value>
+    </Setting>
+    <Setting Name="PrintORBarcode" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Theme1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">-15443436,-1,-16119286,-1,-13676721,-1,-13676721,-1,-2302756,-16777216</Value>
+    </Setting>
+    <Setting Name="Theme2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">-15790321,-1,-16777165,-65408,-16634257,-1,-16777165,-1,-16777216,-65408</Value>
+    </Setting>
+    <Setting Name="Theme3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">-38476,-16777216,-60269,-16777216,-65281,-1,-16181,-16777216,-1,-16777216</Value>
+    </Setting>
+    <Setting Name="Theme4" Type="System.String" Scope="User">
+      <Value Profile="(Default)">-14803426,-1,-13296896,-32704,-7715584,-1,-12574720,-1,-32768,-16777216</Value>
+    </Setting>
+    <Setting Name="Theme5" Type="System.String" Scope="User">
+      <Value Profile="(Default)">-14211289,-16744193,-15987700,-16744965,-15329770,-1,-15000805,-1,-16777216,-16744193</Value>
+    </Setting>
+    <Setting Name="BackupPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">c:\backup</Value>
+    </Setting>
+    <Setting Name="PrintDuplicate" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ShowReceipt" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="LoadBtnSize" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="MaxLoadBtnCnt" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="CashInSvc" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="CashOutSvc" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SendToOthersSvc" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="IntCashPickUpSvc" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DomCashPickupSvc" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="RemitSendSvc" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="RemitCancelSvc" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="CashInRebate" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="CashOutRebate" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SendToOthersRebate" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="IntCashPickUpRebate" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DomCashPickupRebate" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="RemitSendRebate" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="RemitCancelRebate" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ChargeServiceFeeOnCancelRemittance" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SmartPadalaSendSvc" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SmartPadalaSendRebate" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SmartPadalaIncashRebate" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SmartPadalaIncashSvc" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="LoadWalletDiscount" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="GCashResetAmount" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">20000</Value>
+    </Setting>
+    <Setting Name="EnablePrint" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ConfirmPrint" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="HeaderFontSize" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">14</Value>
+    </Setting>
+    <Setting Name="NormalFontSize" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
