@@ -209,20 +209,20 @@ namespace AlreySolutions.Class.Load
                                 break;
                             case SCashTranstype.ENCASH:
 
-                                reload.Amount = this.TransAmount + this.SvcFeeAmount;
+                                reload.Amount = this.TransAmount;// + this.SvcFeeAmount;
                                 reload.RemainingBalance = dbConnect.GetRemainingLoadBalance(this.Load_Id) + reload.Amount;
                                 reload.TransactionAmount = -(this.TransAmount - this.SvcFeeAmount);
                                 reload.Save();
                                 
-                                if (Properties.Settings.Default.SmartPadalaIncashRebate && this.Rebate > 0)
-                                {
-                                    reload.Amount = this.Rebate;
-                                    reload.RemainingBalance = dbConnect.GetRemainingLoadBalance(this.Load_Id) + reload.Amount;
-                                    reload.Remarks = "Rebate";
-                                    reload.TransactionAmount = 0;
-                                    reload.ReloadType = (int)ReloadType.REBATE;
-                                    reload.Save();
-                                }
+                                //if (Properties.Settings.Default.SmartPadalaIncashRebate && this.Rebate > 0)
+                                //{
+                                //    reload.Amount = this.Rebate;
+                                //    reload.RemainingBalance = dbConnect.GetRemainingLoadBalance(this.Load_Id) + reload.Amount;
+                                //    reload.Remarks = "Rebate";
+                                //    reload.TransactionAmount = 0;
+                                //    reload.ReloadType = (int)ReloadType.REBATE;
+                                //    reload.Save();
+                                //}
                                 break;                            
                         }
                         load.CurrentBalance = dbConnect.GetRemainingLoadBalance(this.Load_Id);

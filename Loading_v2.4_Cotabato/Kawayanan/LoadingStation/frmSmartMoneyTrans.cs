@@ -126,7 +126,7 @@ namespace AlreySolutions.LoadingStation
                     sc.RefNum = txtCSRefNum.Text;
                     sc.TransAmount = double.Parse(txtCSAmount.Text.Trim());
                     sc.SvcFeeAmount = double.Parse(txtCSSvcFee.Text.Trim());
-                    sc.Rebate = double.Parse(txtCSCommission.Text.Trim());
+                    sc.Rebate = 0; // double.Parse(txtCSCommission.Text.Trim());
                     sc.TotalAmtTransfered = double.Parse(txtCSTotalAmtTrans.Text);
 
 
@@ -167,8 +167,6 @@ namespace AlreySolutions.LoadingStation
                             or.ExecPrint(ret);
                             strmsg.Clear();
                             Clear();
-                            Clear();
-                            m_LoadAccount = clsLoadAccount.GetLoadAccount(m_LoadAccount.LoadId);
                             RefreshAccount();
                         }
                     }
@@ -218,6 +216,7 @@ namespace AlreySolutions.LoadingStation
         }
         private void RefreshAccount()
         {
+            m_LoadAccount = clsLoadAccount.GetLoadAccount(m_LoadAccount.LoadId);
             m_LoadAccount.LstServiceFees = clsServiceFee.GetServiceFees(m_LoadAccount.LoadId);
             ctrlLoadAccount.Description = m_LoadAccount.Description;
             ctrlLoadAccount.LoadType = m_LoadAccount.LoadType;
@@ -280,15 +279,15 @@ namespace AlreySolutions.LoadingStation
             {
                 try
                 {
-                    clsServiceFee fee = m_LoadAccount.LstServiceFees.FirstOrDefault(x => double.Parse(txt.Text) <= x.AmountTo);
-                    if (fee != null)
-                    {
+                    //clsServiceFee fee = m_LoadAccount.LstServiceFees.FirstOrDefault(x => double.Parse(txt.Text) <= x.AmountTo);
+                    //if (fee != null)
+                    //{
                         clsServiceFee inhousefee = ComputeGCashremitFee(double.Parse(txt.Text), false);
 
-                        fee.Rebate = inhousefee.EcashFee - fee.EcashFee;
+                        //fee.Rebate = inhousefee.EcashFee - fee.EcashFee;
 
                         txtCSSvcFee.Text = inhousefee.EcashFee.ToString("n");
-                        txtCSCommission.Text = fee.Rebate.ToString();
+                        txtCSCommission.Text = "0";
                         txtCSTotalAmtTrans.Text = txt.Text;
                         double p = double.Parse(txtCSAmount.Text) - double.Parse(txtCSSvcFee.Text);
                         txtCSTotalPayment.Text = string.Format("{0:0.00}", p);
@@ -301,8 +300,8 @@ namespace AlreySolutions.LoadingStation
                         //{
                         //    txtTotalCashPayment.Text = string.Format("{0:n}", double.Parse(txt.Text));
                         //}
-                    }
-                    else txtCSSvcFee.Text = "";
+                    //}
+                    //else txtCSSvcFee.Text = "";
                 }
                 catch { txtCSSvcFee.Text = ""; }
             }
@@ -385,6 +384,7 @@ namespace AlreySolutions.LoadingStation
                 {
                     MessageBox.Show("Unclaimed cash added successfully", "Save", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     UpdateList();
+                    RefreshAccount();
                     Clear();
                 }
             }
@@ -444,6 +444,24 @@ namespace AlreySolutions.LoadingStation
                         txtCSRefNum.Text = uc.RefNum;
                         txtCSAmount.Text = uc.Amount.ToString("n");
                     }
+                }
+            }
+        }
+
+        private void btnRecompute_Click(object sender, EventArgs e)
+        {
+            frmInput frm = new frmInput();
+            frm.Title = "Recompute Service Fee";
+            frm.Caption = "Enter Service Fee %:";
+            frm.Value = "2";
+            frm.IsNumericOnly = true;
+            frm.withDecimal = true;
+            if (frm.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                if (Convert.ToDouble(frm.Value) > 5) MessageBox.Show("Invalid Service Fee Percentage. Must be less than 5");
+                else
+                {
+                    txtCSSvcFee.Text = (Convert.ToDouble(txtCSAmount.Text) * (Convert.ToDouble(frm.Value)/100)).ToString("0.00");
                 }
             }
         }

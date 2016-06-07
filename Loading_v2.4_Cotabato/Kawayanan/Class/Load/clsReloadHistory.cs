@@ -171,7 +171,7 @@ namespace AlreySolutions.Class.Load
             strmsg.Add("");
 
             strmsg.Add(string.Format("Load Account Name: {0}", acc.Description));
-            strmsg.Add(string.Format("Previous Balance: P {0:0.00}", acc.AvailableBalance + Amount));
+            strmsg.Add(string.Format("Previous Balance: P {0:0.00}", acc.AvailableBalance - Amount));
             strmsg.Add(string.Format("Amount: P {0:0.00}", Amount));
             strmsg.Add(string.Format("Available Balance: P {0:0.00}", acc.AvailableBalance));
             strmsg.Add("");

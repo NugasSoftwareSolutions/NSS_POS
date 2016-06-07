@@ -399,7 +399,11 @@ namespace AlreySolutions.LoadingStation
                         txtSvcFee1.Text = fee.EcashFee.ToString("n");
                         txtRebate1.Text = ComputeRebate(double.Parse(txt)).ToString();
                     }
-
+                    else if (optCashIn.Checked)
+                    {
+                        txtSvcFee1.Text = "0";
+                        txtRebate1.Text = ComputeRebate(double.Parse(txt)).ToString();
+                    }
                     else
                     {
                         txtSvcFee1.Text = "0";

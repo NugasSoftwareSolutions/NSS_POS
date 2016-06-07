@@ -97,6 +97,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.lblInfo = new System.Windows.Forms.Label();
             this.ctrlLoadAccount = new AlreySolutions.LoadingStation.ctrlLoadAccount();
+            this.btnRecompute = new System.Windows.Forms.Button();
             this.tabPage2.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -211,6 +212,7 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.btnRecompute);
             this.panel2.Controls.Add(this.cboRefNum);
             this.panel2.Controls.Add(this.txtCSSmartMoney);
             this.panel2.Controls.Add(this.label1);
@@ -373,7 +375,6 @@
             // 
             this.txtCSSvcFee.Location = new System.Drawing.Point(226, 128);
             this.txtCSSvcFee.Name = "txtCSSvcFee";
-            this.txtCSSvcFee.ReadOnly = true;
             this.txtCSSvcFee.Size = new System.Drawing.Size(283, 26);
             this.txtCSSvcFee.TabIndex = 9;
             // 
@@ -447,7 +448,7 @@
             this.panel1.Controls.Add(this.txtSSRefNum);
             this.panel1.Location = new System.Drawing.Point(12, 9);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(858, 338);
+            this.panel1.Size = new System.Drawing.Size(858, 332);
             this.panel1.TabIndex = 9;
             // 
             // txtSSSmartMoney
@@ -521,7 +522,7 @@
             // btnProcessSending
             // 
             this.btnProcessSending.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnProcessSending.Location = new System.Drawing.Point(764, 296);
+            this.btnProcessSending.Location = new System.Drawing.Point(764, 290);
             this.btnProcessSending.Name = "btnProcessSending";
             this.btnProcessSending.Size = new System.Drawing.Size(90, 37);
             this.btnProcessSending.TabIndex = 11;
@@ -552,7 +553,6 @@
             // 
             this.txtSSSvcFee.Location = new System.Drawing.Point(250, 254);
             this.txtSSSvcFee.Name = "txtSSSvcFee";
-            this.txtSSSvcFee.ReadOnly = true;
             this.txtSSSvcFee.Size = new System.Drawing.Size(240, 26);
             this.txtSSSvcFee.TabIndex = 9;
             // 
@@ -796,6 +796,16 @@
             this.ctrlLoadAccount.Size = new System.Drawing.Size(249, 145);
             this.ctrlLoadAccount.TabIndex = 16;
             // 
+            // btnRecompute
+            // 
+            this.btnRecompute.Location = new System.Drawing.Point(516, 128);
+            this.btnRecompute.Name = "btnRecompute";
+            this.btnRecompute.Size = new System.Drawing.Size(122, 26);
+            this.btnRecompute.TabIndex = 41;
+            this.btnRecompute.Text = "Re-Compute";
+            this.btnRecompute.UseVisualStyleBackColor = true;
+            this.btnRecompute.Click += new System.EventHandler(this.btnRecompute_Click);
+            // 
             // frmSmartMoneyTrans
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -901,5 +911,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn MobileNum;
         private System.Windows.Forms.DataGridViewTextBoxColumn Description;
         private System.Windows.Forms.DataGridViewTextBoxColumn CurrentBal;
+        private System.Windows.Forms.Button btnRecompute;
     }
 }
